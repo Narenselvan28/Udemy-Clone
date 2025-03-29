@@ -213,4 +213,27 @@
     .navbar__s4{
         display: block;
     }
+    .saleimg__off{
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        width: 25%;
+        padding: 2%;
+        top: 10%;
+        left: 10%;
+        opacity: 0;
+        animation-name: zoom;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes zoom{
+        0%{
+            opacity: 0;
+            transform: scale(0);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
 }
