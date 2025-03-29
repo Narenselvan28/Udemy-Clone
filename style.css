@@ -79,6 +79,15 @@
     color: white;
     padding: 10px;
     border-radius: 30px;
+    border: #A435F0 solid 2px;
+
+}
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: #A435F0 solid 2px;
+
 
 }
 /* saleimg */
@@ -93,10 +102,25 @@
 .saleimg__off{
     background-color: white;
     position: absolute;
+    border-radius: 5px;
     width: 25%;
     padding: 2%;
     top: 30%;
     left: 10%;
+    opacity: 0;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .recommended{
